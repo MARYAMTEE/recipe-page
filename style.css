@@ -1,5 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 :root{
-    
+    --White: hsl(0, 0%, 100%);
+    --eggshell: hsl(30, 54%, 90%);
+    --cream: hsl(30, 18%, 87%);
+    --brownish-gray: hsl(30, 10%, 34%);
+    --dark-brown: hsl(24, 5%, 18%);
+    --Brown: hsl(14, 45%, 36%);
+    --Rose: hsl(332, 51%, 32%);
+    --pale-pink: hsl(330, 100%, 98%);
+
+    --font-1: "Young Serif", serif;
+    --font-2: "Outfit", serif;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--eggshell);
+}
+
+.recipe-content{
+    background-color: var(--White);
+    width: 45rem;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: var(--font-1);
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--dark-brown);
+    margin-bottom: 0;
+}
+
+p{
+    font-family: var(--font-2);
+    font-size: 16px;
+    color: var(--brownish-gray);
+}
+
+h2{
+    font-family: var(--font-1);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--Brown);
+}
+
+hr{
+    --gray: #ddd;
+    border: 1px solid var(--gray);
+}
+
+ul li, ol li, td{
+    font-family: var(--font-2);
+    font-size: 16px;
+    color: var(--brownish-gray);
+    font-weight: 400;
+}
+
+/* THE PREPARATION TIME */
+
+.recipe-2{
+    background-color: var(--pale-pink);
+    padding: 10px 40px;
+    border-radius: 15px;
+}
+
+.para1{
+    color: var(--Rose);
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.recipe-2 ul{
+    padding: 0 17px;
+}
+
+.recipe-2 ul li{
+    padding: 5px 15px;
+}
+
+.recipe-2 ul li::marker{
+    color: var(--Rose);
+    font-size: 11px;
+}
+
+/* THE INGREDIENTS */
+
+ .recipe-3 ul{
+    padding: 0 0 0 25px;
+ }
+
+ .recipe-3 ul li{
+    padding: 5px 0 13px 15px;
+    list-style-type: square;
+ }
+
+ .recipe-3  ul li::marker{
+    color: var(--Brown);
+    font-size: 11px;
+}
+
+
+/* INSTRUCTIONS */
+.recipe-4 ol{
+    padding: 0 0 0 25px;
+}
+
+.recipe-4 ol li{
+    padding: 5px 0 13px 15px;
+ }
+
+.recipe-4  li::marker{
+    color: var(--Brown);
+    font-weight: 600;
+}
+
+
+/* NUTRITION  */
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    --gray:#ddd;
+    padding: 15px;
+    border-bottom: 1px solid var(--gray);
+}
+
+tr:last-child td{
+    border-bottom: none;
+}
+
+tr td:nth-child(2){
+    color: var(--Brown);
+    font-weight: 700;
 }
